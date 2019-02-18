@@ -6,24 +6,44 @@ import domain.GameObject;
 
 public final class GameController {
 	
-	static ArrayList<GameObject> playingObjects = new ArrayList<>();
+	public static ArrayList<GameObject> playingObjects = new ArrayList<>();
 	
 	public GameController() {
-		// INICIALIZAR LAS VARIABLES SEGÚN UML
+		
 	}
 	
-	public void addGameObject(GameObject object) {
+	public static void addGameObject(GameObject object) {
 		// Add a single playing object
 		playingObjects.add(object);
 	}
 	
-	public void removeGameObject(GameObject object) {
+	public static void removeGameObject(GameObject object) {
 		// Remove a single playing object
 		playingObjects.remove(playingObjects.indexOf(object));
 	}
 	
 	public ArrayList<GameObject> getPlayingObjects() {
 		return playingObjects;
+	}
+	
+	public void checkCollisions(ArrayList<GameObject> playingObjects) {
+		
+	}
+	
+	public void moveEnemy() {
+		
+	}
+	
+	public void attackEnemy() {
+		
+	}
+	
+	public void moveMeteor() {
+		
+	}
+	
+	public void attackWormhole() {
+		
 	}
 	
 	
